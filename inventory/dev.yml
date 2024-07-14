@@ -1,0 +1,20 @@
+all:
+  children:
+    nfs:
+      hosts:
+        172.31.20.76:
+          ansible_ssh_user: ec2-user
+    webservers:
+      hosts:
+        172.31.22.218:
+          ansible_ssh_user: ec2-user
+        172.31.18.68:
+          ansible_ssh_user: ec2-user
+    db:
+      hosts:
+        172.31.30.178:
+          ansible_ssh_user: ubuntu
+    lb:
+      hosts:
+        172.31.29.189:
+          ansible_ssh_user: ubuntu
